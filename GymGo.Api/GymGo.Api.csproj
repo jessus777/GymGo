@@ -19,7 +19,6 @@
     <ProjectReference Include="..\GymGo.Identity\GymGo.Identity.csproj" />
     <ProjectReference Include="..\GymGo.Infrastructure\GymGo.Infrastructure.csproj" />
     <ProjectReference Include="..\GymGo.Persistence\GymGo.Persistence.csproj" />
-    <ProjectReference Include="..\GymGo.Shared\GymGo.Shared.csproj" />
   </ItemGroup>
 
 </Project>

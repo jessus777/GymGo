@@ -1,11 +1,9 @@
 ﻿using GymGo.Application.Contracts.Identity;
-using GymGo.Application.Contracts.Persistence;
 
-namespace GymGo.Application.Contracts
+namespace GymGo.Application.Contracts.Persistence
 {
     public interface IUnitOfWorkFactory
     {
         IUnitOfWork Create();
-        IIdentityUnitOfWork CreateIdentity();
     }
 }

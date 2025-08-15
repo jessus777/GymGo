@@ -1,5 +1,4 @@
-﻿using GymGo.Application.Contracts;
-using GymGo.Application.Contracts.Identity;
+﻿using GymGo.Application.Contracts.Identity;
 using GymGo.Application.Contracts.Persistence;
 using GymGo.Identity.Contexts;
 using GymGo.Identity.Repositories;
@@ -15,7 +14,6 @@ namespace GymGo.Shared
         : IUnitOfWorkFactory
     {
         private readonly IDbContextFactory<ApplicationDbContext> _dbContextFactory;
-        private readonly IDbContextFactory<IdentityDbContext> _identityDbFactory;
         private readonly IMediator _mediator;
         private readonly ISqlFileLoader _sqlFileLoader;
 

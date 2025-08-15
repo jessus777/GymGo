@@ -6,7 +6,6 @@ using GymGo.Identity.Extensions;
 using GymGo.Infrastructure.DataSeeding;
 using GymGo.Infrastructure.Extensions;
 using GymGo.Persistence.Extensions;
-using GymGo.Shared.Extensions;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,7 +20,6 @@ builder.Services.AddApplicationServices();
 builder.Services.AddPersistenceServices(builder.Configuration);
 
 builder.Services.AddIdentityServices(builder.Configuration);
-builder.Services.AddInConfigurePersistenceServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
 //builder.Services.AddSwaggerGen();
 builder.Services.AddSwaggerGen(options =>

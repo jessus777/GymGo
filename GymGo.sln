@@ -31,8 +31,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toolkit", "Toolkit\Toolkit.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymGo.Identity", "GymGo.Identity\GymGo.Identity.csproj", "{6CD825AD-6A1A-4D36-9DB0-D78690295DBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymGo.Shared", "GymGo.Shared\GymGo.Shared.csproj", "{387B6100-20B9-47C8-B46C-DFDBB0164941}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,10 +65,6 @@ Global
 		{6CD825AD-6A1A-4D36-9DB0-D78690295DBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CD825AD-6A1A-4D36-9DB0-D78690295DBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CD825AD-6A1A-4D36-9DB0-D78690295DBB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{387B6100-20B9-47C8-B46C-DFDBB0164941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{387B6100-20B9-47C8-B46C-DFDBB0164941}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{387B6100-20B9-47C8-B46C-DFDBB0164941}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{387B6100-20B9-47C8-B46C-DFDBB0164941}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,7 +82,6 @@ Global
 		{4A6FC3D7-669A-4B2F-8719-C3E169A6B6E3} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{3E3C13BF-9245-48BA-BA26-3DACB3C161D1} = {4A6FC3D7-669A-4B2F-8719-C3E169A6B6E3}
 		{6CD825AD-6A1A-4D36-9DB0-D78690295DBB} = {6A42218D-F659-4ED1-A8F5-0318879E33F9}
-		{387B6100-20B9-47C8-B46C-DFDBB0164941} = {6A42218D-F659-4ED1-A8F5-0318879E33F9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D79C97C3-D0CB-44B8-BB6F-58FB3AAD44CF}

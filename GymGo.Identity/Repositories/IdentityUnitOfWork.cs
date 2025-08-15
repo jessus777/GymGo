@@ -1,6 +1,7 @@
 ﻿using GymGo.Application.Contracts.Identity;
 using GymGo.Identity.Contexts;
-using Microsoft.EntityFrameworkCore;
+using GymGo.Identity.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace GymGo.Identity.Repositories
 {
@@ -8,16 +9,28 @@ namespace GymGo.Identity.Repositories
         : IIdentityUnitOfWork, IDisposable
     {
         private readonly IdentityDbContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
         private bool _disposed = false;
 
-        public IdentityUnitOfWork(IdentityDbContext context)
+
+        public IdentityUnitOfWork(
+            IdentityDbContext context
+            , UserManager<ApplicationUser> userManager
+            , RoleManager<IdentityRole> roleManager)
         {
-            _context = context;
+            _context = context ?? throw new ArgumentNullException(nameof(context));
+            _userManager = userManager;
+            _roleManager = roleManager;
         }
 
         private IUserRepositoryAsync? _userRepositoryAsync;
-        public IUserRepositoryAsync UserRepositoryAsync => 
-            _userRepositoryAsync ??= new UserRepositoryAsync(_context);
+        public IUserRepositoryAsync UserRepositoryAsync =>
+            _userRepositoryAsync ??= new UserRepositoryAsync(_userManager);
+
+        private IRoleRepositoryAsync? _roleRepositoryAsync;
+        public IRoleRepositoryAsync RoleRepositoryAsync =>
+            _roleRepositoryAsync ??= new RoleRepositoryAsync(_roleManager);
 
         public Task CommitAsync(CancellationToken cancellationToken = default)
         {
@@ -28,6 +41,7 @@ namespace GymGo.Identity.Repositories
         {
             Dispose(true);
             GC.SuppressFinalize(this); // No llamar de nuevo al finalizer        }
+        }
         protected virtual void Dispose(bool disposing)
         {
             if (_disposed) return;

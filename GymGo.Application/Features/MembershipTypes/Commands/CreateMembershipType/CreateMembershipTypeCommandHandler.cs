@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using FluentResults;
-using GymGo.Application.Contracts;
+using GymGo.Application.Contracts.Persistence;
 using GymGo.Application.Dtos;
 using GymGo.Application.Exceptions;
 using GymGo.Application.Requests;
