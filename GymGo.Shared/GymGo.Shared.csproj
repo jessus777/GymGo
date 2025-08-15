@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GymGo.Application\GymGo.Application.csproj" />
+    <ProjectReference Include="..\GymGo.Identity\GymGo.Identity.csproj" />
+    <ProjectReference Include="..\GymGo.Persistence\GymGo.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

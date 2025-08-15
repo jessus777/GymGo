@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GymGo.Identity\GymGo.Identity.csproj" />
+    <ProjectReference Include="..\GymGo.Infrastructure\GymGo.Infrastructure.csproj" />
+    <ProjectReference Include="..\GymGo.Persistence\GymGo.Persistence.csproj" />
+    <ProjectReference Include="..\GymGo.Shared\GymGo.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

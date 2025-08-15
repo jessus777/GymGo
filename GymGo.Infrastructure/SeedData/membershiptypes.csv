@@ -1,0 +1,11 @@
+Id,Name,Description,Price,DurationInDays,IsActive,IsDeleted,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate
+a3c23e60-4891-4cec-a21d-c49e8dc74b90,Día Único,Acceso por un solo día.,50.0,1,True,False,,,,
+2974e861-531f-4cec-abe1-db2bcbaee340,Fin de Semana,Acceso por sábado y domingo.,90.0,2,True,False,,,,
+21b1887c-a0f7-4a81-8092-6ce1fcfad2a6,Semanal,Acceso ilimitado durante una semana.,200.0,7,True,False,,,,
+126e266d-7755-4f60-b2e8-97208cf1a8da,Quincenal,Acceso ilimitado por 15 días.,350.0,15,True,False,,,,
+832e7705-5135-43d1-9f6d-618ead623118,Mensual Básico,Acceso básico por 30 días.,500.0,30,True,False,,,,
+528446bd-3cbd-40e7-a82b-6b7c6d54c835,Mensual Plus,Acceso con clases grupales y horario extendido.,650.0,30,True,False,,,,
+5d426f78-37ab-46cd-90c2-b9d188a33664,Trimestral,3 meses con descuento especial.False,1350,90,True,False,,,,
+844de602-2b82-4711-a0ee-513ab2a2ca3e,Semestral,6 meses con descuento adicional.,2500.0,180,True,False,,,,
+b3377ba5-eb20-4a67-9b5d-73e40ac4e6bc,Anual,Membresía por 12 meses con mayores beneficios.,4500.0,365,True,False,,,,
+b3d74532-be18-4465-b91e-d015c597808f,Por visita,Costo por cada entrada individual.,30.0,1,True,False,,,,
